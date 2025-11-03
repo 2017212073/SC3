@@ -1,0 +1,24 @@
+# general
+seed: 43
+workers: 0
+dataset_dir: "./datasets"
+
+# train options
+batch_size: 12
+image_size: 224
+start_epoch: 0
+epochs: 10
+dataset: "XSRP" # CBRS / wifi / XSRP
+noise_snr: 0
+
+# model options
+resnet: "ResNetIQ" # ResNetIQ
+feature_dim: 256
+model_path: "save/XSRP_upload"
+reload: False
+
+# loss options
+learning_rate: 0.0003
+weight_decay: 0.
+instance_temperature: 1
+cluster_temperature: 1
